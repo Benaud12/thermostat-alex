@@ -5,13 +5,14 @@ $( document ).ready (function() {
   $('#upTemp').click(function() {
     thermostat.upTemp();
     $('#temp').text(thermostat.temperature);
-    $('#temp').css("color", thermostat.colour);
+    //$('#background').css('background-image', 'url("./images/SmokeFog-Slide6.jpg")');
+    //["I'm only", age, "years old"].join(" ")
   });
 
   $('#downTemp').click(function() {
     thermostat.downTemp();
     $('#temp').text(thermostat.temperature);
-    $('#temp').css("color", thermostat.colour);
+    //$('#temp').css("color", thermostat.colour);
   });
 
   $('#changePowerSaving').click(function() {
@@ -22,7 +23,7 @@ $( document ).ready (function() {
   $('#reset').click(function() {
     thermostat.reset();
     $('#temp').text(thermostat.temperature);
-    $('#temp').css("color", thermostat.colour);
+    //$('#temp').css("color", thermostat.colour);
   });
 
 });
